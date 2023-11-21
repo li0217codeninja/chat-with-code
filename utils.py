@@ -24,7 +24,7 @@ class Embedder:
         self.git_link = git_link
         last_name = self.git_link.split('/')[-1]
         self.clone_path = last_name.split('.')[0]
-        self.deeplake_path = f"hub://priyadwivedi/{self.clone_path}"
+        self.deeplake_path = f"hub://li0217codeninja/{self.clone_path}"
         self.model = ChatOpenAI(model_name="gpt-3.5-turbo")  # switch to 'gpt-4'
         self.hf = HuggingFaceEmbeddings(model_name=model_name)
         self.openai = OpenAIEmbeddings()
